@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<body>
+<%if(errors.length > 0) {%>
+    <% for(var i=0; i< errors.length; i++) {%>
+        <div class="alert alert-danger">
+            <%errors[i]%>
+        </div>
+        <%}%>
+<%}%>
+<%if(success.length > 0) {%>
+    <div class="alert alert-success">
+        <%=success%>
+    </div>
+    <%}%>
+    <div class="landing">
+      <!-- LANDING DECORATION -->
+      <div class="landing-decoration"></div>
+      <!-- /LANDING DECORATION -->
+  
+      <!-- LANDING INFO -->
+      <div class="landing-info">
+        <!-- LOGO -->
+        <div class="logo">
+          <!-- ICON LOGO VIKINGER -->
+          <img src="img/17.png" style="width: 150px;">
+          <!-- /ICON LOGO VIKINGER -->
+        </div>
+        <!-- /LOGO -->
+  
+        <!-- LANDING INFO PRETITLE -->
+        <h2 class="landing-info-pretitle">Welcome to</h2>
+        <!-- /LANDING INFO PRETITLE -->
+  
+        <!-- LANDING INFO TITLE -->
+        <h1 class="landing-info-title">Patwarkhana</h1>
+        <!-- /LANDING INFO TITLE -->
+        <!-- /LANDING INFO TEXT -->
+  
+        <!-- TAB SWITCH -->
+        <div class="tab-switch">
+
+          <a href="AdminLogin"><p class="tab-switch-button">Admin</p></a>
+          <!-- TAB SWITCH BUTTON -->
+          <a href="signin"><p class="tab-switch-button ">Login</p></a>
+          <!-- /TAB SWITCH BUTTON -->
+  
+          <!-- TAB SWITCH BUTTON -->
+          <a href="Signup"><p class="tab-switch-button">Register</p></a>
+          <!-- /TAB SWITCH BUTTON -->
+        </div>
+        <!-- /TAB SWITCH -->
+      </div>
+      <!-- /LANDING INFO -->
+  
+      <div class="form-box login-register-form-element" style="margin: 0 auto; margin-top: 25px;">
+        <!-- FORM BOX DECORATION -->
+        <img class="form-box-decoration" src="img/landing/rocket.png" alt="rocket">
+        <!-- /FORM BOX DECORATION -->
+  
+        <!-- FORM BOX TITLE -->
+        <h2 class="form-box-title">Create your Account!</h2>
+        <!-- /FORM BOX TITLE -->
+    
+        <!-- FORM -->
+        <form class="form" method="post" action="../register_u">
+          <!-- FORM ROW -->
+          <div class="form-row">
+            <!-- FORM ITEM -->
+            <div class="form-item">
+              <!-- FORM INPUT -->
+              <div class="form-input">
+                <label for="register-email">Your Email</label>
+                <input type="email" id="register-email" name="email" style="background-color: #1d2333;
+                border: 1px solid #3f485f;
+                color: #fff;
+                transition: border-color .2s ease-in-out;
+                height: 54px;
+padding: 0 18px;width: 100%;
+border-radius: 12px;
+font-size: 1rem;
+font-weight: 700;">
+              </div>
+              <!-- /FORM INPUT -->
+            </div>
+            <!-- /FORM ITEM -->
+          </div>
+          <!-- /FORM ROW -->
+    
+          <!-- FORM ROW -->
+          <div class="form-row">
+            <!-- FORM ITEM -->
+            <div class="form-item">
+              <!-- FORM INPUT -->
+              <div class="form-input">
+                <label for="register-username">Username</label>
+                <input type="text" id="register-username" name="fullname">
+              </div>
+              <!-- /FORM INPUT -->
+            </div>
+            <!-- /FORM ITEM -->
+          </div>
+          <!-- /FORM ROW -->
+    
+          <!-- FORM ROW -->
+          <div class="form-row">
+            <!-- FORM ITEM -->
+            <div class="form-item">
+              <!-- FORM INPUT -->
+              <div class="form-input">
+                <label for="cnic">Cnic</label>
+                <input type="text" id="Cnic" name="cnic">
+              </div>
+              <!-- /FORM INPUT -->
+            </div>
+            <!-- /FORM ITEM -->
+          </div>
+          <!-- /FORM ROW -->
+          <div class="form-row">
+            <!-- FORM ITEM -->
+            <div class="form-item">
+              <!-- FORM INPUT -->
+              <div class="form-input">
+                <label for="register-password">Password</label>
+                <input type="password" id="register-password" name="pwd" minlength="5">
+              </div>
+              <!-- /FORM INPUT -->
+            </div>
+            <!-- /FORM ITEM -->
+          </div>
+          <!-- FORM ROW -->
+          <div class="form-row">
+            <!-- FORM ITEM -->
+            <div class="form-item">
+              <!-- FORM INPUT -->
+              <div class="form-input">
+                <label for="register-password-repeat">Repeat Password</label>
+                <input type="password" id="register-password-repeat" name="rpwd">
+              </div>
+              <!-- /FORM INPUT -->
+            </div>
+            <!-- /FORM ITEM -->
+          </div>
+          <!-- /FORM ROW -->
+    
+          <!-- FORM ROW -->
+          <div class="form-row">
+            <!-- FORM ITEM -->
+            <div class="form-item">
+              <!-- CHECKBOX WRAP -->
+              <div class="checkbox-wrap">
+                <input type="checkbox" id="register-newsletter" name="register_newsletter" checked>
+                <!-- CHECKBOX BOX -->
+                <!-- /CHECKBOX BOX -->  
+              </div>
+              <!-- /CHECKBOX WRAP -->
+            </div>
+            <!-- /FORM ITEM -->
+          </div>
+          <!-- /FORM ROW -->
+    
+          <!-- FORM ROW -->
+          <div class="form-row">
+            <!-- FORM ITEM -->
+            <div class="form-item">
+              <!-- BUTTON -->
+              <button class="button medium primary">Register Now!</button>
+              <!-- /BUTTON -->
+            </div>
+            <!-- /FORM ITEM -->
+          </div>
+          <!-- /FORM ROW -->
+        </form>
+        <!-- /FORM -->
+    
+        <!-- FORM TEXT -->
+        <p class="form-text">You'll receive a confirmation email in your inbox with a link to activate your account. If you have any problems, <a href="#">contact us</a>!</p>
+        <!-- /FORM TEXT -->
+      </div>
+      <!-- /FORM BOX -->
+    
+
+</body>
+</html>
